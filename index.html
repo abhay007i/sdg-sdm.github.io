@@ -1,84 +1,78 @@
 <!DOCTYPE html>
-<!-- Created By CodingNepal - www.codingnepalweb.com -->
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Awesome Quiz App | CodingNepal</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- FontAweome CDN Link for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <title>Home</title>
+
+    <script src="https://kit.fontawesome.com/1b0c80a788.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+
+    <script src="main.js"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/backtotop.css">
+    <link rel="stylesheet" href="css/searchbar.css">
+    <link rel="stylesheet" href="css/sdg.css">
 </head>
 <body>
-    <!-- start Quiz button -->
-    <div class="start_btn"><button>Start Quiz</button></div>
+    <!-- Navbar -->
+    <nav>
+        <div class="topnav" id="myTopnav">
+            <b>
+                <a href="index.html" class="active">Sustainable Development Goals</a>
+            </b>
+            <a href="sdg.html">SDG</a>
+            <a href="wherewestand.html">Where we stand</a>
+            <a href="stepstaken.html">Steps taken</a>
+            <a href="commonlinkage.html">Common Linkage</a>
+            <a href="thewayahead.html">The way ahead</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </nav>
+    <br>
+    <br>
+    <!-- logo -->
+    <img class="logo" src="image/logo.jpg" alt="">
 
-    <!-- Info Box -->
-    <div class="info_box">
-        <div class="info-title"><span>Some Rules of this Quiz</span></div>
-        <div class="info-list">
-            <div class="info">1. You will have only <span>15 seconds</span> per each question.</div>
-            <div class="info">2. Once you select your answer, it can't be undone.</div>
-            <div class="info">3. You can't select any option once time goes off.</div>
-            <div class="info">4. You can't exit from the Quiz while you're playing.</div>
-            <div class="info">5. You'll get points on the basis of your correct answers.</div>
-        </div>
-        <div class="buttons">
-            <button class="quit">Exit Quiz</button>
-            <button class="restart">Continue</button>
-        </div>
+    <h1 style="text-align:center;">Soaring High Is My Nature.</h1>
+    <br>
+    <!--searchbar-->
+    <div class="i-searchbar">
+        <input class="searchbar" type="text" placeholder="Search here...">
+        <i class="fas fa-search searchbar-icon"></i>
     </div>
+    <br>
+    <br>
+    <br>
 
-    <!-- Quiz Box -->
-    <div class="quiz_box">
-        <header>
-            <div class="title">Awesome Quiz Application</div>
-            <div class="timer">
-                <div class="time_left_txt">Time Left</div>
-                <div class="timer_sec">15</div>
-            </div>
-            <div class="time_line"></div>
-        </header>
-        <section>
-            <div class="que_text">
-                <!-- Here I've inserted question from JavaScript -->
-            </div>
-            <div class="option_list">
-                <!-- Here I've inserted options from JavaScript -->
-            </div>
-        </section>
+    <video width="48%" autoplay="autoplay" height="48%" muted loop>
+        <source src="video/people.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+      </video>
 
-        <!-- footer of Quiz Box -->
-        <footer>
-            <div class="total_que">
-                <!-- Here I've inserted Question Count Number from JavaScript -->
-            </div>
-            <button class="next_btn">Next Que</button>
-        </footer>
-    </div>
+    <video width="48%" autoplay="autoplay" height="48%" muted loop>
+        <source src="video/text.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+      </video>
 
-    <!-- Result Box -->
-    <div class="result_box">
-        <div class="icon">
-            <i class="fas fa-crown"></i>
-        </div>
-        <div class="complete_text">You've completed the Quiz!</div>
-        <div class="score_text">
-            <!-- Here I've inserted Score Result from JavaScript -->
-        </div>
-        <div class="buttons">
-            <button class="restart">Replay Quiz</button>
-            <button class="quit">Quit Quiz</button>
-        </div>
-    </div>
 
-    <!-- Inside this JavaScript file I've inserted Questions and Options only -->
-    <script src="questions.js"></script>
 
-    <!-- Inside this JavaScript file I've coded all Quiz Codes -->
-    <script src="script.js"></script>
 
+     <br>
+     <br>
+     <!-- Footer -->
+    <button id=backtotopbtn onclick=topFunction() title="Go to top">Top</button><footer class=footer><div class=footertext>The 2030 Agenda for Sustainable Development, adopted by all United Nations Member States in 2015, provides a shared blueprint for peace and prosperity for people and the planet, now and into the future.</div><br><div class=footerlinks data-bs-placement=top data-bs-toggle=tooltip title="help email"><i class="fas envelope-icon fa-envelope"></i> sdmhs_gurgaon@rediffmail.com<br><br><i class="fas fa-icon fa-phone-alt"></i> 8750046033-34<br><br><i class="fas fa-icon fa-globe"></i> www.sdms.gurgaon.com</div><div class=footercredit data-bs-placement=top data-bs-toggle=tooltip title=footer>ALL RIGHTS RESERVED | Sd Memorial Senior Secondary School</div></footer>
+
+<script>
+    var mybutton=document.getElementById("backtotopbtn");function scrollFunction(){document.body.scrollTop>20||document.documentElement.scrollTop>20?mybutton.style.display="block":mybutton.style.display="none"}function topFunction(){document.body.scrollTop=0,document.documentElement.scrollTop=0}window.onscroll=function(){scrollFunction()};
+</script>
 </body>
-</html>
 </html>
